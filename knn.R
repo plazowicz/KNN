@@ -34,5 +34,38 @@ test.data <- normalized.data[(train.count+1):m,]
 
 labels <- wine.data[,dim(wine.data)[2]]
 cl <- labels[1:train.count]
+correctTestLabels <- labels[(train.count+1):m]
 
-result <- knn(train.data, test.data, cl, k=3)
+test.count <- length(correctTestLabels)
+
+errors <- 1:200
+
+for(n in 1:200) {
+  result <- knn(train.data, test.data, cl, k=n)
+  
+  errors.count <- 0
+  
+  for(i in 1:test.count) {
+    
+    if( result[i] != correctTestLabels[i] ) {
+      errors.count <- errors.count + 1
+    }
+  }
+  
+  error.rate <- errors.count/test.count
+  errors[n] <- error.rate
+}
+
+# result <- knn(train.data, test.data, cl, k=70)
+# 
+# errors.count <- 0
+# 
+# for(i in 1:test.count) {
+#   
+#   if( result[i] != correctTestLabels[i] ) {
+#     errors.count <- errors.count + 1
+#   }
+# }
+# 
+# error.rate <- errors.count/test.count
+
