@@ -1,0 +1,306 @@
+/*!CK:1846354397!*//*1380521335,173224515*/
+
+.profileInfoSection{margin-bottom:30px}
+.profileInfoSection .emptyInfoSection{text-align:center;font-size:13px}
+.profileInfoSection .inlineLabel{color:#999}
+.profileInfoSection .privacyTooltip{padding-top:4px}
+.profileInfoTable .activateLink{padding-left:8px}
+.uiGroupsAddTypeaheadView .member{background-color:#f7f7f7}
+.uiGroupsAddTypeaheadView .member .text{color:#9c9c9c}
+.uiGroupsAddTypeaheadView .member .subtext,
+.uiGroupsAddTypeaheadView .member .category{color:#b5b5b5}
+.uiGroupsAddTypeaheadView .member.selected{background-color:#e9e9e9}
+div.uiGroupsAddTypeaheadView .member.selected{border-color:#d2d2d2}
+.uiGroupsAddTypeaheadView .member.selected .text{color:#676767 !important}
+.uiGroupsAddTypeaheadView .member.selected .subtext,
+.uiGroupsAddTypeaheadView .member.selected .category{color:#929292 !important}
+.groupsCoverPhoto{margin:0 -20px 0 -20px}
+.groupsCoverPhoto{margin-top:-2px}
+#mainContainer .groupJumpLayout div#rightCol{padding-top:0}
+#mainContainer .groupJumpLayout div#headerArea{padding-bottom:10px}
+.hasLeftCol #mainContainer .hasRightCol.groupJumpLayout div#contentArea{padding-left:10px;padding-right:10px;padding-top:0}
+#mainContainer div#contentCol.groupJumpLayout{padding-top:0}
+.groupJumpLayout .groupComposerCleanWrap{margin-left:-10px;padding-left:15px;padding-top:5px}
+.groupJumpLayout .fbTimelineSection{background:none;border:none;padding:0}
+.groupJumpLayout .fbEditCover .profilePicNotch{display:none}
+.groupNotificationsSelector .selected .uiButtonText{color:#fff}
+.groupJumpLayout #fbProfileCover .coverWrap{height:250px}
+.groupJumpLayout #fbProfileCover{margin:0}
+.groupJumpLayout #fbProfileCover .fbProfileCoverPhotoSelector{bottom:auto;right:11px;top:10px;z-index:10}
+.groupJumpLayout #fbProfileCover .coverNoImage .fbProfileCoverPhotoSelector{display:none;top:10px}
+.groupJumpLayout #fbProfileCover .coverNoImage:hover .fbProfileCoverPhotoSelector{display:block}
+.groupJumpLayout .fbProfileCoverPhotoSelector .uiMenuItem .itemAnchor{padding:1px 6px}
+.groupJumpLayout .fbProfileCoverPhotoSelector .uiSelectorMenuWrapper{background-color:#000;left:auto;right:0}
+.groupJumpLayout #fbProfileCover .coverEditor{margin-bottom:30px}
+.groupJumpLayout #fbProfileCover .coverNoImage{border-bottom:none;height:auto}
+.groupJumpLayout #fbProfileCover .coverBorder{border:none;display:none}
+.groupJumpLayout #pagelet_group_actions, .groupJumpLayout .groupNotificationsSelector{display:inline-block}
+.groupsParentNux{background-color:#f5f6f8;border-bottom:1px solid rgba(0, 0, 0, .2);margin:-2px -20px 0 -20px;padding:10px 15px 18px 15px;position:relative;z-index:10}
+.groupsParentNuxText{line-height:15px;margin-top:-12px;width:600px}
+.groupsJumpBarTop{background-color:#f2f2f2;border-bottom:1px solid #ccc;border-top:1px solid #fff;margin:0 -20px 0 -20px;padding:0}
+.groupsJumpBarTop .groupsCleanLinks{margin-top:-1px;position:absolute}
+.groupsJumpBarTop .groupsCleanLink{color:#565656;border-top:1px solid #fff;border-right:none;display:inline-block;font-weight:bold;margin-right:0;padding:7px 10px 8px}
+.groupsJumpBarTop .groupsCleanLinkBorder{border-right:1px solid #dbdbdb}
+.groupsJumpBarTop .groupsCleanLinkBorder:first-child{border-width:0 1px 0 0}
+.groupsJumpBarTop .groupsCleanIconLink{padding:8px 10px 4px}
+.groupsJumpBarTop .groupsCleanLinkName{color:#999;padding:0 10px 0 0}
+.groupsJumpBarTop .groupsCleanLinksSelected .groupsJumpTitle, .groupsJumpBarTop .groupsCleanLinksSelected{background-color:#fff;color:#333}
+.groupsJumpBarTop .groupsCleanLinksSelected.groupsCleanLinkName{color:#999}
+.groupsJumpBarTop .groupsCleanLinksBorder{background-color:#fff;height:4px;margin-bottom:-4px;margin-right:0;position:relative}
+.groupsJumpActionsPlaceholder{height:28px}
+.groupsJumpActions{margin:3px 4px 4px 0}
+.groupsJumpTitle{color:#565656;display:inline-block;font-size:13px;overflow:hidden;max-width:500px;text-overflow:ellipsis;white-space:nowrap;padding:6px 0 4px 10px}
+.groupsJumpInfoArea{margin:0 -20px 0 -20px;padding:20px 10px 0 10px}
+.groupsJumpInfoBox{width:511px}
+ul.groupsJumpActions > li{border-color:#dbdbdb}
+.groupsJumpActions .uiButton{border:1px solid #f2f2f2;border-bottom-color:#f2f2f2;background:none;box-shadow:none}
+.groupsJumpActions{border-left:1px solid #dbdbdb}
+.groupsJumpSearchButton{display:inline-block;padding:6px 6px 0 10px}
+.groupsJumpHeaderSearchWrap{position:relative;height:21px}
+.groupsJumpHeaderSearch{position:absolute;right:0;z-index:10}
+.groupsJumpHeaderSearch .uiSearchInput input{width:180px}
+.groupsJumpPrivacyIconText .img{margin-top:2px}
+.uiIconText.groupsJumpPrivacyIconText{margin-left:2px;padding-left:18px}
+.groupsJumpPrivacyIcon{display:inline-block;margin-bottom:-2px}
+.groupsJumpPrivacyIconHover{display:inline-block;margin-top:2px}
+.groupsJumpPrivacyIconLink{display:inline-block;padding:9px 0 5px;vertical-align:top}
+a.groupsPrivacyHeader:hover{text-decoration:none}
+.groupsJumpActionsItem .uiButton{padding:2px 10px}
+.groupsJumpActionArea{margin-left:-10px}
+.groupsJumpAreaBox{width:511px}
+.groupsJumpInfoDivider{border-bottom:1px solid #eee;margin-bottom:10px;padding-bottom:10px}
+.groupsJumpInfoSpace{margin-bottom:10px}
+.groupsCreateIcon .img{margin-top:1px;margin-left:3px}
+.groupHugFrame{background-color:#fafafa}
+.groupHugFace, .groupHugFiller{display:inline-block;vertical-align:bottom;zoom:1}
+.groupHugFace:hover{text-decoration:none}
+.groupHugFrame .mask{background-color:#fff;height:100%;left:0;opacity:.5;position:absolute;top:0;white-space:nowrap;width:100%}
+.groupHugFaceHover:hover .groupHugFaceTip{display:block}
+.groupHugFaceTip{background-image:-moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7));bottom:0;color:#fff;cursor:pointer;display:none;font-weight:bold;padding:10px 5px 3px;position:absolute;word-wrap:break-word}
+.groupHugFace .liveFacesFacepileStyle{display:block}
+.groupHugOverlayGradient{background:url(/rsrc.php/v2/yw/r/ZFfI2vhkwMH.png) bottom left repeat-x;bottom:0;left:0;position:absolute;right:0;top:0}
+.groupNotificationsSelector .uiButton .img, .groupNotificationsSelector .img{margin-top:2px;margin-left:2px}
+.groupsCleanLinks{margin-top:4px}
+.groupComposerCleanWrap{border-top:1px solid #e5e5e5;margin-left:-18px;padding-top:9px;padding-left:18px;padding-bottom:4px}
+.groupJumpLayout .groupComposerCleanWrap{border-top:none}
+.groupJumpLayout .uiStreamHomepage .uiStreamStory:first-child{margin-top:-5px}
+.groupsCleanLink .groupsTabIcon{margin-bottom:0;margin-right:4px}
+.groupsCleanLink .groupsShiftedTabIcon{margin-bottom:-1px;margin-right:4px}
+.groupsCleanLink{margin-right:8px}
+.groupsChildGroupPhoto{display:block;margin-right:8px}
+.groupsChildGroupFriendHeader{background-color:#fafafa;border:1px solid #e9e9e9;margin-bottom:-1px;padding:5px 8px}
+.groupsChildGroupFriendArrow{display:block;height:5px;margin-top:9px;width:10px;background-image:url(/rsrc.php/v2/yN/r/cUAwPimZh4q.png);background-repeat:no-repeat;background-size:auto;background-position:-124px -108px}
+.groupsChildGroupFriendArrowUp{background-image:url(/rsrc.php/v2/yN/r/cUAwPimZh4q.png);background-repeat:no-repeat;background-size:auto;background-position:-134px -108px}
+.groupsChildGroupFriendName{color:#3b5998}
+.groupJumpLayout.homeFixedLayout #rightCol .uiHeaderSection, .groupJumpLayout.homeFixedLayout #rightCol .uiSideHeader, .groupJumpLayout.homeFixedLayout .uiHeaderSection, .groupJumpLayout.homeFixedLayout .uiSideHeader{border-bottom:none;border-top:1px solid #e5e5e5;margin-bottom:8px;padding:3px 6px}
+.groupJumpLayout.homeFixedLayout #rightCol .uiHeaderSection a, .groupJumpLayout.homeFixedLayout #rightCol .uiSideHeader a, .groupJumpLayout.homeFixedLayout .uiHeaderSection a, .groupJumpLayout.homeFixedLayout .uiSideHeader a{color:#6d84b4}
+.groupJumpLayout .groupsGroupSideLink{display:inline-block;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.groupsMoreGroupsDivider{border-top:1px solid #e9e9e9}
+.groupsCreateDivider{border-top:1px solid #e5e5e5;margin-bottom:5px}
+.groupJumpLayout .groupsCreateDivider{border-top:none}
+.groupJumpLayout .groupsCoverPhoto{margin-left:-21px;margin-right:-21px;position:relative}
+.groupJumpLayout .groupsJumpCoverBorder{border-bottom:1px solid rgba(0, 0, 0, .2);border-left:1px solid rgba(0, 0, 0, .2);border-right:1px solid rgba(0, 0, 0, .2);bottom:0;left:0;position:absolute;pointer-events:none;right:0;top:0}
+.groupsSideMargin{margin-bottom:10px}
+.groupsSideTopNegMargin{margin-top:-5px}
+.groupsEmailVerifyTitle{font-size:12px}
+.groupsEmailVerifyInput{margin-right:-1px;padding:5px 4px;width:160px}
+.groupsEmailVerifyInputShort{width:120px}
+.groupsVerificationSelector .uiPopoverButtonWithChevron{padding-bottom:4px;padding-top:5px}
+.groupsVerificationSelector .uiPopoverButtonWithChevron .uiButtonText{margin-top:-2px}
+.groupsVerificationManual{display:inline-block;height:16px}
+.groupJumpLayout .uiComposer{border-bottom:none}
+.groupsEditDescriptionLink{display:inline-block;margin:0 0 5px 0}
+.groupsEditDescriptionArea{margin:0 1px}
+.groupsEditDescriptionText{height:50px;width:320px}
+.groupJumpLayout #contentArea .uiHeaderSection{margin-left:-10px;padding-left:10px}
+.groupsTopicsBox, .groupsLocationBox, .groupsAddMemberSideBox{margin:10px 6px}
+.groupAddMemberHeader{margin-bottom:-5px;margin-top:10px}
+.groupClaimAdminHeader{margin-bottom:3px;margin-top:10px}
+.groupsStreamMemeberBox{border-top:1px solid #e9e9e9;margin-left:-10px;padding-left:15px;padding-right:5px}
+.groupsStreamMemberBoxNames a:first-child{font-weight:bold}
+.groupsSuggestAdminLink{display:inline-block;margin-top:2px}
+.groupsSuggestTypeahead{margin-left:-1px;margin-right:5px}
+.groupsCellWrap{padding-right:5px;word-break:break-all}
+.groupsJumpSpacer{border-bottom:1px solid #e9e9e9;margin-bottom:-1px;margin-top:30px}
+.groupsDescriptionBox{width:225px}
+.groupsFilesRevisionTextArea{padding:5px;width:390px}
+.groupsFilesDialogFooter{background:#f2f2f2;border-top:1px solid #ccc;margin:10px -20px -16px;padding:8px 10px 8px 10px;position:relative}
+.groupMemberActionBar{margin:0 -20px;padding:5px 10px}
+.groupMemberBrowser{margin:0 -20px;padding:0 15px}
+.groupMemberSuggestionBrowser{margin:0 -10px 0 -20px;padding:0 15px}
+.groupsMemberSearchBox{margin-left:-1px}
+.groupsFileBox{margin-top:41px}
+.groupsFilename{display:block;margin-left:-21px;word-break:break-all;word-wrap:break-word}
+.groupsAddMemberSpacer{margin-bottom:30px}
+.groupsJumpSubgroupHeader{margin:0 -10px}
+.groupNotificationSelectorIconOnly .uiButton{padding:2px 6px 2px 3px}
+.groupsInvitedSubtitle{margin-top:-6px}
+.groupsFileImage{height:32px;width:32px}
+.groupNotificationSelectorRow{text-align:left}
+.groupsFileHeader{width:100%}
+.uiSearchInput.groupsMemberSearchLite input{padding-bottom:1px}
+.groupsEditDescriptionHeader{font-weight:bold}
+.groupsDefaultChildGroup .groupsChildGroupPhoto{border-color:green;border-style:solid;border-width:1px}
+.groupRecommendedInfo{width:176px}
+.groupRecommendedDesc{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:inherit}
+.groupRecommendationsList .uiList:empty{margin-bottom:0}
+div.groupLaunchBox{border-radius:2px;padding:15px 20px 10px}
+.groupsLaunchFooter{background-color:#f2f2f2;margin:5px -20px -10px;padding:0 15px 3px}
+.groupsLaunchTitle{border-bottom:1px solid #e9e9e9;margin-bottom:5px;padding-bottom:10px}
+.groupsLaunchRow{padding:5px 0}
+.groupsLaunchRowCompleted{background-color:#f2f2f2;border-top:1px solid #ccc;margin:0 -15px;padding:5px 15px 8px}
+.groupsLaunchRowCompleted{background-color:#f2f2f2;border-top:1px solid #ccc;margin:0;padding:5px 15px 8px}
+.groupsLaunchRow .groupAddMemberTypeaheadBox{margin-right:-6px;margin-top:0;padding-right:0}
+.groupsLaunchRow .uiGroupsAddTypeaheadView{margin-bottom:0}
+.groupsLaunchRowMainCol{width:300px}
+.groupsLaunchRowTypeahead{position:relative}
+.groupsLaunchDescriptionEditor.DOMControl_placeholder, .groupsLaunchRowTypeahead .DOMControl_placeholder{color:#aaa}
+.groupsLaunchRowTypeahead .loadingIndicator{position:absolute;right:10px;top:5px}
+.groupsCommunityMarketingMain{border-radius:5px;margin-left:-10px;width:510px}
+.groupsLiteLegacy .groupsCommunityMarketingMain{margin-left:0}
+.groupsCommunityMarketingSide{width:220px}
+.groupsCommunityMarketingList{margin-left:-9px;margin-top:10px}
+.groupsLiteLegacy .groupsCommunityMarketingList{margin-left:1px}
+.groupsCommunityMarketingSpacer{display:block;margin-bottom:4px}
+.groupsRecAddMemberTypeaheadView{width:230px}
+.groupsLaunchTypehaead{width:112px}
+.groupSuggestedBox .groupSuggestedRow{padding:4px 0}
+.groupSuggestedBox .groupSuggestedImage{height:30px;width:30px}
+.groupSuggestedGrid{width:100%}
+.groupSuggestedGridName{padding-left:10px;width:100%}
+.groupsLaunchModuleTypeaheadView .calltoaction .text{color:#3b5998;font-weight:bold}
+.groupsLaunchCounter{margin-left:7px;width:115px}
+.groupsLaunchCounter .img{margin-right:1px}
+.groupsFriendAdded{display:inline-block;height:22px;width:22px}
+.groupsLaunchDescriptionEditor{height:50px;width:280px}
+.groupsMailingListSpacer{width:380px}
+.groupsMailingListTextarea{height:45px;width:370px}
+.groupsLaunchGrid{width:100%}
+.groupsLaunchGridLabel{padding:10px 0 10px 10px}
+.uiInputLabelCheckbox.groupsLaunchGridCheck{margin-top:10px}
+.groupsLaunchGridItem{margin-bottom:2px;width:222px}
+.groupsLaunchGridItem:hover{background-color:#eceff5}
+.groupsLaunchGridItem.checked{background-color:#d8dfea}
+.groupsRecsEmbedHeader{border-top:1px solid #d2d2d2;margin:0 0 0 -10px;padding:5px 5px 5px 10px}
+.groupsVerificationBoxWrapper{background-color:#f2f2f2;border-top:1px solid #ccc;border-radius:0 5px}
+.groupsNewMembersReminder #groupsNewMembersLink{padding:0}
+.groupsNewMembersReminder #groupsNewMembersLink:hover{background-color:transparent}
+.groupsNewMembersLink{margin-top:12px}
+.groupSearchIndentItem{margin-left:35px}
+.groupSearchPageDivider{background:#e9e9e9;margin:0}
+.groupSearchResultsDivider{background:#e9e9e9;margin:5px 0 0 0}
+.groupSearchResult:hover{background-color:#eff2f7}
+.groupSearchResult .author{font-size:13px}
+.groupSearchResult .timestamp{width:120px;text-align:right}
+.groupSearchEmpty{border-bottom:solid #e9e9e9;border-width:1px 0;color:#ccc;font-size:22px;font-weight:bold;margin:0;padding:218px 0 280px;text-align:center}
+.groupSearchResultGrid{width:100%}
+.groupBrowserAdminItem{display:inline-block;margin-top:2px}
+.groupSearchResult .blue{color:#3b5998}
+.groupWideSearchBoxRow{margin:0 -20px}
+.groupMemberBrowser .groupsBrowserBio{width:120px;word-wrap:break-word}
+.groupsChildBrowserRow{margin-left:60px}
+.groupsChildBrowserRow ul{padding-top:6px}
+.groupsChildLink{color:#232b37;font-size:14px}
+.groupsChildAction{padding-top:28px}
+.fbGroupsStream .uiStreamHeaderText{margin-left:50px}
+.fbGroupsBoulderStream{margin-top:-5px}
+.groupsStreamIcon{margin-left:34px}
+.groupsStreamIcon .img{height:16px;width:16px}
+.groupJumpLayout .fbGroupsBoulderStream .mainWrapper{margin-right:20px}
+.groupJumpLayout .fbGroupsBoulderStream .uiStreamStory{margin-left:-10px}
+.groupJumpLayout .fbGroupsBoulderStream .uiStream .uiStreamHeader{margin:20px 0 5px 0}
+.groupJumpLayout .fbGroupsBoulderStream .uiStreamHeader .uiStreamHeaderText{margin-left:65px;padding-right:10px}
+.groupsStreamSmallFace{margin-left:26px}
+.groupsStreamSmallFace .img{height:24px;width:24px}
+ul.fbGroupsBoulderStream .uiStreamHeader{border-width:1px 0 0 0;margin:15px 0 -1px -18px;padding-bottom:0}
+.groupsSky ul.fbGroupsBoulderStream .uiStreamHeader{margin:15px -15px -1px}
+.groupsSky .uiStream .uiStreamHeader .uiStreamHeaderText{margin-left:65px}
+.groupJumpLayout .fbGroupsBoulderStream .uiStreamHeader{margin-left:-10px}
+.uiStream .uiStreamNoBorderStory{border-width:0}
+.uiStreamStory.uiStreamNoBorderStory .storyContent{margin:-3px 0 3px}
+.groupsMallSelector{margin-left:-10px}
+.fbGroupsPinnedSection{margin-bottom:3px;margin-top:-13px}
+.uiStream.fbGroupsBoulderStream .uiStreamHeader,
+.uiStream .fbGroupsBoulderStream .uiStreamHeader{border:none}
+.groupsPinnedLite{margin-top:-22px}
+.groupAddMemberTypeaheadBox .plusIcon{position:absolute;z-index:2;top:7px;left:8px}
+.groupAddMemberTypeaheadBox{margin-top:10px;padding-right:4px;padding-top:0;position:relative}
+.groupAddMemberTypeaheadBox .innerWrap{margin-left:15px}
+._7m2{height:137px;left:0;position:absolute;top:0;width:100%}
+._7m3{height:137px;overflow:hidden}
+._7lj{height:155px;position:relative;top:-9px;width:370px}
+._7m4{background:url(/rsrc.php/v2/yG/r/8RHv8nDQAHL.png) repeat-x left top;bottom:0;height:93px;position:absolute;width:100%}
+._7m5{z-index:4}
+._7lh{display:none}
+html ._53ih ._7lh{display:block;height:155px;position:absolute;top:-9px;width:370px}
+._7lh ._7lj{top:0}
+._7ld ._7lh ._7li{display:block;left:15px;position:absolute;top:0}
+._53ih._7le ._7lh{border-left:1px solid rgba(0, 0, 0, .45);border-top:1px solid rgba(0, 0, 0, .45);height:11px;overflow:hidden;top:0;-moz-transform-origin:0 0;width:11px;z-index:1}
+._7le ._7lh ._7lj{-moz-transform-origin:0 0}
+._7lf._7le ._7lh ._7lj, ._7lf._7le ._7lh{-moz-transform-origin:100% 0}
+.MessagingMessage .attachments .documentSelector{margin:2px 1px -4px -6px}
+.MessagingMessage .attachments .documentSelector .uiSelectorButton{background-image:url(/rsrc.php/v2/yT/r/HoG7-QOdvFN.png);background-repeat:no-repeat;background-size:auto;background-position:right -212px;border:0;box-shadow:none}
+.MessagingMessage .attachments .documentSelector .uiButtonText{color:#3b5998;font-weight:normal}
+.MessagingMessage .attachments .documentSelector:hover .uiButtonText{text-decoration:underline}
+.MessagingMessage .attachments .documentSelector .openToggler .uiButtonText{color:#333;text-decoration:none}
+.MessagingMessage .attachments .documentSelector .uiMenu{margin-left:4px}
+.fileActionRow{line-height:19px}
+.mediaRow .mediaPortrait{line-height:14px;padding:0;overflow:hidden;width:75px}
+.mediaRow .mediaPortrait .photo{height:75px;margin-bottom:5px}
+.mediaRow .mediaPortrait .mediaPageName{overflow:hidden;max-height:28px;word-wrap:break-word}
+.mediaRowWrapper{text-align:center}
+.mediaRowRevealer{line-height:12px}
+._5e7- th.label{color:#999;font-weight:bold;line-height:15px;text-align:left;vertical-align:top;width:90px;word-wrap:break-word}
+._5e7- td.data{line-height:15px;width:100%}
+._5h4e ._480v{width:50px}
+._5jv_{display:block}
+._5e7- td.rightCol{padding:3px 0 0 35px;text-align:right;width:50px}
+._5e7- .fbProfileExperience .experienceTitle{font-weight:normal}
+._5e7- .sampleImageCaption{text-align:center;width:50px;word-wrap:break-word}
+._5e7- .uiInfoTable .label{color:#666;font-size:11px;font-weight:normal;padding-top:0}
+._5jsb:hover{background:#f6f7f8}
+._5e7- .uiInfoTable .data{padding-top:0}
+._5e7- .throbber{display:none}
+._5e7- .async_saving .throbber{display:block}
+table._5e7-{margin:0 10px 5px;width:379px}
+._5e7- ._480u{line-height:15px;padding-top:4px}
+._5e7- th._3sts{color:#999;font-weight:normal;line-height:15px;text-align:left;vertical-align:top;width:79px;word-wrap:break-word}
+.sp_60cj8d{background-image:url(/rsrc.php/v2/yV/r/rfMf-rQwGR8.png);background-size:auto;background-repeat:no-repeat;display:inline-block;height:12px;width:12px}
+.sx_a7cd09{width:13px;height:14px;background-position:-13px -33px}
+.selected .sx_a7cd09{background-position:0 -33px}
+.sx_cab0dd{height:14px;background-position:-12px -48px}
+.selected .sx_cab0dd{background-position:0 -48px}
+.sx_08a66e{width:8px;height:8px;background-position:-13px -167px}
+.sx_69266f{width:16px;height:16px;background-position:-14px -115px}
+.sx_4fef06{background-position:-12px -63px}
+.selected .sx_4fef06{background-position:0 -63px}
+.sx_432210{background-position:-12px -76px}
+.selected .sx_432210{background-position:0 -76px}
+.sx_6f72bb{width:32px;height:32px;background-position:0 0}
+.sx_a72ed1{background-position:-12px -89px}
+.selected .sx_a72ed1{background-position:0 -89px}
+.sx_40512f{background-position:-12px -102px}
+.selected .sx_40512f{background-position:0 -102px}
+.sx_12e742{background-position:-17px -133px}
+.sx_405b61{background-position:-17px -146px}
+.sx_90e70b{background-position:0 -167px}
+.sx_a4c2bf{width:16px;height:16px;background-position:0 -133px}
+.sx_647f2c{width:16px;height:16px;background-position:0 -150px}
+.sx_2e79ba{width:13px;height:17px;background-position:0 -115px}
+._3stn{border:0;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%}
+._3sto td{padding:5px 0}
+._3stp ._3sto td{padding:0;visibility:hidden}
+._480u, ._480v, ._3sts{padding:3px 0 1px 0;text-align:left;vertical-align:top}
+._3stt ._480u, ._3stt ._480v{padding-top:5px}
+._480u > input, ._480u > label input, ._480v > input, ._480v > label input{margin-left:0}
+._3stt ._3sts{padding-top:8px}
+._3sts ._3stu{color:#999}
+._480v{padding:0 0 0 20px;width:225px}
+._3sts{color:#666;font-weight:bold;padding-right:10px;text-align:right;width:130px;word-wrap:break-word}
+.dynamicIconSelectorHideIcons .uiMenuItem .itemWithIcon .itemLabel{display:block}
+.dynamicIconSelectorHideIcons .uiMenuItem .itemIcon{display:none}
+.uiProfilePortrait{display:inline-block;overflow:hidden;padding:0 6px 6px 0;vertical-align:top;width:57px}
+.uiProfilePortrait img{display:block;margin-bottom:3px}
+
+#bootloader_Q3bAv { height: 42px; }
+.bootloader_Q3bAv { display:block !important; }
