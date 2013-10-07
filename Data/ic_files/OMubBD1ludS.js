@@ -1,5 +1,0 @@
-/*!CK:2067253730!*//*1380512181,173217085*/
-
-if (self.CavalryLogger) { CavalryLogger.start_js(["S95yy"]); }
-
-__d("UFIFeaturedToplevelCommentList",["UFIConstants","UFIToplevelCommentList"],function(a,b,c,d,e,f){var g=b('UFIConstants'),h=b('UFIToplevelCommentList');for(var i in h)if(h.hasOwnProperty(i))k[i]=h[i];var j=h===null?null:h.prototype;k.prototype=Object.create(j);k.prototype.constructor=k;k.__superConstructor__=h;k.getCommentList=function(l,m){};k.getCommentListsForFeedbackTargetID=function(l){};k.getCommentListForFeedbackTargetID_UNSAFE=function(l){};k.resetCommentListsForFeedbackTargetID=function(l){};function k(l,m){h.call(this,l,g.UFICommentOrderingMode.FEATURED);var n=0,o=m.length;this.updateCommentCount(o);this.addCommentIDs(n,o,m);m.forEach(function(p){this.addComment(p);}.bind(this));}k.prototype.fetchComments=function(l,m,n){};e.exports=k;});
