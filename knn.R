@@ -40,7 +40,7 @@ test.count <- length(correctTestLabels)
 
 errors <- 1:200
 
-for(n in 1:200) {
+for(n in 1:500) {
   result <- knn(train.data, test.data, cl, k=n)
   
   errors.count <- 0
@@ -55,17 +55,4 @@ for(n in 1:200) {
   error.rate <- errors.count/test.count
   errors[n] <- error.rate
 }
-
-# result <- knn(train.data, test.data, cl, k=70)
-# 
-# errors.count <- 0
-# 
-# for(i in 1:test.count) {
-#   
-#   if( result[i] != correctTestLabels[i] ) {
-#     errors.count <- errors.count + 1
-#   }
-# }
-# 
-# error.rate <- errors.count/test.count
 
