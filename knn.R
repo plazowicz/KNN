@@ -6,11 +6,20 @@ train.percentage <- 0.8
 
 # Load wine data
 wine.data <- read.table('Data/winequality-white.csv',sep=';',header=TRUE)
+wine.data <- wine.data[sample.int(nrow(wine.data)),]
 wine.data <- data.matrix(wine.data)
 
 # Load breast cancer data
 cancer.data <- read.table('Data/breast-cancer-wisconsin.data',sep=',')
+# cancer.data <- cancer.data[sample.int(nrow(cancer.data)),]
 cancer.data <- data.matrix(cancer.data[,2:dim(cancer.data)[2]])
+
+# Load digits data
+digits.data <- read.table('Data/semeion.data')
+labels <- digits.data[,257:dim(digits.data)[2]]
+labels <- apply(labels==1, 1, which)
+digits.data <- cbind(digits.data[,1:256], labels)
+digits.data <- digits.data[sample.int(nrow(digits.data)),]
 
 Normalize <- function(data) {
   means = apply(data, 2, mean)
@@ -24,8 +33,13 @@ Normalize <- function(data) {
   data
 }
 
-DoKNNWithNumericalData <- function(data, plotFile, kSupremum=200) {
-  normalized.data <- Normalize(data[,1:dim(data)[2]-1])
+DoKNNWithNumericalData <- function(data, plotFile, kSupremum=200, normalization=TRUE) {
+  if( normalization ) {
+    normalized.data <- Normalize(data[,1:dim(data)[2]-1])
+  }
+  else {
+    normalized.data <- data[,1:dim(data)[2]-1]
+  }
   m <- dim(data)[1]
   
   # Prepare training data, test data and labels 
@@ -63,4 +77,4 @@ DoKNNWithNumericalData <- function(data, plotFile, kSupremum=200) {
   savePlot(filename=paste("Plots",plotFile,sep="/"), type="jpeg")
 }
 
-DoKNNWithNumericalData(cancer.data, "cancer200.ext")
+DoKNNWithNumericalData(digits.data, "digits20Shuffeled.ext", k=20, normalization=FALSE)
