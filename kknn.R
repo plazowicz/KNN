@@ -1,22 +1,8 @@
 # Load packages
 library(kknn)
 
-# Conf
-train.percentage <- 0.8
-
-# Load digits data
-# digits.data <- read.table('Data/semeion.data')
-# labels <- digits.data[,257:dim(digits.data)[2]]
-# labels <- apply(labels==1, 1, which)
-# digits.data <- cbind(digits.data[,1:256], labels)
-# digits.data <- digits.data[sample.int(nrow(digits.data)),]
-
-# Load iris data
-
 iris.data <- read.table('Data/iris.data', sep=",")
 iris.data <- iris.data[sample.int(nrow(iris.data)),]
-# iris.data <- digits.data
-m <- dim(iris.data)[1]
 
 Normalize <- function(data) {
   means = apply(data, 2, mean)
@@ -30,23 +16,59 @@ Normalize <- function(data) {
   data
 }
 
-iris.data <- cbind(Normalize(iris.data[,1:(dim(iris.data)[2]-1)]),iris.data[,dim(iris.data)[2]])
-colnames(iris.data)[dim(iris.data)[2]] <- "Species" 
-
-train.count <- as.integer(train.percentage*m)
-train.data <- iris.data[1:train.count,]
-test.data <- iris.data[(train.count+1):m,]
-
-# metrics <- c(1,2,1000000000)
-
-errorRates <- 1:3
-kSupremum <- 20
-for(i in 1:kSupremum) {
-  iris.kknn <- kknn(Species~., train.data, test.data, distance=100000000, k=i)
-#   summary(iris.kknn)
-  fit <- fitted(iris.kknn)
-  errorRate <- sum(as.integer(fit != test.data$Species))/nrow(test.data) 
-  errorRates[i] <- errorRate
+PrepareData <- function(data, normalization=TRUE) {
+  if( normalization ) {
+    n <- dim(data)[2]-1
+    data <- cbind(Normalize(data[,1:n]),data[,n+1])   
+  }
+  colnames(data)[n+1] <- "Labels"
+  data
 }
 
-plot(1:kSupremum, errorRates, main="Performance of KNN with regard to K on sample data set", xlab="K", ylab="Error rate")
+DoKNN <- function(data, dist=2, kSupremum=50, folds.count=5) {
+  m <- dim(data)[1]
+  n <- dim(data)[2]-1
+  
+  step <- as.integer(m/folds.count)
+  
+  errorRates <- matrix(0, nrow=kSupremum, ncol=folds.count)
+  
+  for(j in seq(1,m,by=step)) {
+    
+    fold.index <- as.integer(j/step)+1
+    
+    if( j+step >= m ) {
+      test.data <- data[j:m,]
+      train.data <- data[1:(j-1),]
+    }
+    else if( j == 1 ) {
+      test.data <- data[1:(j+step-1),]
+      train.data <- data[(j+step):m,]
+    }
+    else {
+      test.data <- data[j:(j+step-1),]
+      train.data <- rbind(data[1:(j-1),],data[(j+step):m,])
+    }
+
+    for(i in 1:kSupremum) {
+      kknn.result <- kknn(Labels~., train.data, test.data, distance=dist, k=i)
+      fit <- fitted(kknn.result)
+      errorRate <- sum(as.integer(fit != test.data$Labels))/nrow(test.data)
+      errorRates[i,fold.index] <- errorRate
+    } 
+  }
+  apply(errorRates, 1, mean)
+}
+
+iris.data <- PrepareData(iris.data)
+manhatan <- DoKNN(iris.data, dist=1)
+euclid <- DoKNN(iris.data)
+chebyshev <- DoKNN(iris.data, dist=100)
+
+kSupremum <- 50
+
+plot(1:kSupremum, manhatan, pch=15, col="red", lty=1, type="b", ylim=c(0,0.2))
+lines(1:kSupremum, euclid, type="b", pch=17, lty=2, col="blue")
+lines(1:kSupremum, chebyshev, col="green", pch=19, lty=3, type="b")
+legend("topleft", inset=.05, title="Performace of KNN with regard to K and various Minkovsky's distance", c("manhattan", "euclid", "chebyshev"), 
+       lty=c(1,2,3), pch=c(15,17,19), col=c("red","blue","green"))
